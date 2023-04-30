@@ -2,11 +2,11 @@
 
 |   | Available | Last Update |
 | ------------- | ------------- | ------------ |
-| Exams | - | - |
-| Labs  | - | - |
-| Russo's Slides | - | - |
+| Exams | No | - |
+| Labs  | Yes | Jun 2023 |
+| Russo's Slides | Yes | Jun 2023 |
 | Russo's Summaries | - | - |
-| Amerini's Slides | - | - |
+| Amerini's Slides | Yes | Jun 2023 |
 | Amerini's Summaries | - | - |
 
 ## Website of the course
