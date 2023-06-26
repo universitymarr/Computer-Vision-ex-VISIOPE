@@ -11,4 +11,19 @@
 ## Website of the course
 |  Course Site | Last Update |
 | ------------- | ------------- | 
-| [https://sites.google.com/diag.uniroma1.it/ireneamerini/teaching] (Google Sites) | 2023 |
+| [Google Sites](https://sites.google.com/diag.uniroma1.it/ireneamerini/teaching) | 2023 |
+
+## Python script
+Inside the ```Exam``` folder, you'll find a Python script called ```computeConvolution.py``` which you can use to check and evaluate your Convolution results (<i>Exercise 1 in Amerini part of the Exam</i>).
+
+To use the script, just set the arguments:
+<br>
+- ```image``` = Image matrix written in the exam paper
+- ```kernel_init``` = Kernel matrix written in the exam paper
+- ```padding``` = Padding to choose.
+- ```C``` = Constant value if using the 'zero' or 'constant' padding.
+- ```coord``` = Coordinates written in the exam paper
+<br>
+
+Then, simply run the script.<br>
+If you spot any bug or any inconsistency with the results, please write me at gianmarcoscarano@gmail.com and I'll check it up.
