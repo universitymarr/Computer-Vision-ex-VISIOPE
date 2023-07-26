@@ -63,14 +63,19 @@ def getPaddedImage(img, mode, constantValue):
     return np.pad(img, pad_width=1, mode=mode)
 
 # ===================== A R G S =====================
-image = np.array([[3, 1, 2, 0],
-                [0, 2, 1, 5],
-                [1, 0, 1, 3],
-                [1, 2, 0, 5]], np.int32)
 
-kernel_init = np.array([[-2, 3, 2],
-                        [0, -1, -2],
-                        [1, -2, 0]], np.int32)
+# Whether to compute correlation (False) or convolution (True)
+convolution = False
+
+image = np.array([[2, 2, 1, 0],
+                  [0, 6, 2, 1],
+                  [4, 0, 1, 2],
+                  [7, 1, 0, 2]
+                 ], np.int32)
+
+kernel_init = np.array([[0, 3, 0],
+                        [1, 0, 2],
+                        [2, 1, 2]], np.int32)
 
 # Refer to line 35 for further explaination
 padding = 'zero'  # zero / reflect / symmetric / constant / edge
@@ -79,14 +84,16 @@ padding = 'zero'  # zero / reflect / symmetric / constant / edge
 # Use C = 0 if using the 'zero' padding
 C = 0
 
-coord = [(3, 3), (1, 1), (2, 4)]
+coord = [(2, 2), (3, 1), (4, 2)]
 # ===================================================
 
-kernel = np.flipud(np.fliplr(kernel_init))
 print(F"Original kernel: \n{kernel_init}")
 print("-------------------------------")
-print(F"Flipped kernel: \n{kernel}")
-print("-------------------------------")
+
+if(convolution):
+    kernel_init = np.flipud(np.fliplr(kernel_init))
+    print(F"Flipped kernel: \n{kernel_init}")
+    print("-------------------------------")
 
 print("# ===== STARTING ALGORITHM ===== #")
 for values in coord:
@@ -106,7 +113,10 @@ for values in coord:
     print("Subset of the image to be computed:")
     print(subset)
     
-    # Convolution
-    final = np.sum(np.multiply(subset, kernel))
-    print(F"Convolution at coord {values}: {final}")
+    # Convolution / Correlation
+    final = np.sum(np.multiply(subset, kernel_init))
+    if(convolution):
+        print(F"Convolution at coord {values}: {final}")
+    else:
+        print(F"Correlation at coord {values}: {final}")
     print("==================================")

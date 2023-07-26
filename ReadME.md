@@ -1,12 +1,12 @@
 # Vision and Perception
 |   | Available | Last Update | Info |
 | ------------- | ------------- | ------------ | ------------ |
-| Exams | Yes | Jun 2023 | |
-| Labs  | Yes | Jun 2023 | |
-| Russo's Slides | Yes | Jun 2023 | |
-| Russo's Summaries | Yes |Jun 2023 | Slides 22-23 have not been summarized since topics are not part of the exam.|
-| Amerini's Slides | Yes | Jun 2023 | |
-| Amerini's Summaries | Yes | Jun 2023 | Slides 24-25 have not been summarized since topics are not part of the exam.|
+| Exams | Yes | July 2023 | |
+| Labs  | Yes | June 2023 | |
+| Russo's Slides | Yes | June 2023 | |
+| Russo's Summaries | Yes |June 2023 | Slides 22-23 have not been summarized since topics are not part of the exam.|
+| Amerini's Slides | Yes | June 2023 | |
+| Amerini's Summaries | Yes | June 2023 | Slides 24-25 have not been summarized since topics are not part of the exam.|
 
 ## Website of the course
 |  Course Site | Last Update |
@@ -18,10 +18,11 @@ Inside the ```Exam``` folder, you'll find a Python script called ```computeConvo
 
 To use the script, just set the arguments:
 <br>
+- ```convolution``` = "True" for using Convolution. "False" for using Correlation
 - ```image``` = Image matrix written in the exam paper
 - ```kernel_init``` = Kernel matrix written in the exam paper
 - ```padding``` = Padding to choose.
-- ```C``` = Constant value if using the 'zero' or 'constant' padding.
+- ```C``` = Constant value if using the 'zero' or 'constant' padding
 - ```coord``` = Coordinates written in the exam paper
 <br>
 
