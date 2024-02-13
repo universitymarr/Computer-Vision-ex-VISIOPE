@@ -1,7 +1,7 @@
 # Vision and Perception
 |   | Available | Last Update | Info |
 | ------------- | ------------- | ------------ | ------------ |
-| Exams | Yes | July 2023 | |
+| Exams | Yes | Jan 2024 | |
 | Labs  | Yes | June 2023 | |
 | Russo's Slides | Yes | June 2023 | |
 | Russo's Summaries | Yes |June 2023 | Slides 22-23 have not been summarized since topics are not part of the exam.|
