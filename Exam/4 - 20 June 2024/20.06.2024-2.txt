@@ -1,0 +1,10 @@
+				EXAM 20.06.2024 - turn 2
+
+1) Describe sobel filter and say why it is different from canny edge detector 
+2) ORBS algorithm and what improvements are present respect to BRIEF
+3)	.1 camera calibration algorithm and how intrinsic and extrinsic parameters 
+	.2 how intrinsic and extrinssic parameters are recovered ( from P )
+4) Why image pyramids are used for optical flow and what improvements it provide
+
+
+NOTE: Unfornately I do not have exam text but this are the question ( more or less )
